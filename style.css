@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 50px;
+}
+.main{
+    width: 860px;
+    margin: 0 auto;
+}
+header .name{
+    text-decoration: none;
+}
+header img{
+    width: 240px;
+    border-radius: 100%;
+}
+header{
+    width: 270px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+header h1{
+    text-align: center;
+    font-size: 28px;
+}
+header p{
+    margin: 0 0 20px;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0 0 20px;
+}
+section{
+    width: 500px;
+    float: right;
+    padding-bottom: 50px;
+}
+section h1{
+    font-size: 28px;
+}
+a{
+    text-decoration: none;
+}
+.link a{
+    font-size: 18px;
+}
+hr{
+    border: 0;
+    background: #e5e5e5;
+    height: 1px;
+    margin: 0 0 20px;
+}
+.introduce{
+    text-align: justify;
+}
+.container{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    padding-top: 0;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.container .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: black;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.html{
+    width: 70%;
+    animation-delay: 0.2s;
+}
+.skill-per.java{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.4s;
+}
+.skill-per.js{
+    width: 60%;
+    animation-delay: 0.4s;
+}
+.skill-per.database{
+    width: 70%;
+    animation-delay: 0.5s;
+}
+.skill-per.other{
+    width: 60%;
+    animation-delay: 0.6s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: black;
+    background: #fff;
+}
+.tooltip::before{
+    content: '';
+    position: relative;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: pink;
+    transform: translateX(-50%) rotate(45deg);
+}
