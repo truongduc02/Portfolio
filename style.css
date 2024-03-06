@@ -5,6 +5,7 @@
 }
 body{
     padding: 50px;
+    display: block;
 }
 .main{
     width: 860px;
@@ -148,4 +149,24 @@ hr{
     z-index: -1;
     background-color: pink;
     transform: translateX(-50%) rotate(45deg);
+}
+@media only screen and (max-width: 960px){
+    .main{
+        width: auto;
+        margin: 0;
+    }
+    section{
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        padding: 20px 0;
+        margin: 0 0 20px;
+    }
+    header,section{
+        float:none;
+        position: static;
+        width: auto;
+    }
+    .container {
+        margin-left: 0;
+    }
 }
